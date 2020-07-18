@@ -23,14 +23,16 @@ def user_guess_input():
 Function that checks if users input match pc's choice, and gives a feed back if not
 """
 def comp_feed_back(user_guess, pc_choice):
-
     if user_guess == pc_choice:
-        found = True
-        return "You found the number!! Congrats!!"
+        print ("You found the number!! Congrats!!")
+        return True
     elif user_guess < pc_choice:
-        return "The number is larger than the one you guessed!"
+        print("The number is larger than the one you guessed!")
+        return False
     else:
-        return "The number is smaller than the one you guessed!"
+        print("The number is smaller than the one you guessed!")
+        return False
+    
 
     
 pc_choice = rand_num()
