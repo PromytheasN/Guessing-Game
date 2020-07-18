@@ -12,7 +12,7 @@ def user_guess_input():
     """
     guess =""
     while True:
-        guess = input("Please input your guess number! ")
+        guess = input("Please input your guess number between 0 - 100! ")
         if guess.isnumeric():
             return int(guess)
 
