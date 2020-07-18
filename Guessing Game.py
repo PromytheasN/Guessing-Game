@@ -37,6 +37,6 @@ def comp_feed_back(user_guess, pc_choice):
     
 pc_choice = rand_num()
 found = False
-while found == False:
+while not found:
     
     found = comp_feed_back(user_guess_input(), pc_choice)
